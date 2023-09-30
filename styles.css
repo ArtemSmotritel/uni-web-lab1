@@ -53,7 +53,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  row-gap: 7px;
+  row-gap: 15px;
   width: min(calc(100% - 60px), 1080px);
 }
 
@@ -101,6 +101,7 @@ hgroup {
 
 .image-container img {
   width: 50%;
+  min-width: 250px;
   border-radius: 20px;
 }
 
@@ -131,6 +132,7 @@ hgroup {
 
 .paragraphs {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .paragraphs article {
@@ -139,6 +141,7 @@ hgroup {
   padding: 10px;
   height: 300px;
   overflow-y: auto;
+  min-width: 300px;
   flex: 1;
 }
 
@@ -180,10 +183,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  .paragraphs {
-    flex-direction: column;
-  }
-
   .gallery {
     flex-direction: column;
   }
@@ -200,10 +199,20 @@ footer p {
 
   .image-container {
     order: 2;
-    flex-direction: column;
   }
 
   .image-container img {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    width: 100%;
+  }
+
+  * {
+    border-radius: 0 !important;
+    border: none !important;
   }
 }
