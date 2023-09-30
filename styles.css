@@ -178,3 +178,32 @@ footer p {
   border-radius: 20px;
   border: 3px solid white;
 }
+
+@media (max-width: 768px) {
+  .paragraphs {
+    flex-direction: column;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery hgroup {
+    padding: 20px 30px;
+  }
+
+  .gallery hgroup h3 {
+    transform: none;
+    position: initial;
+    width: auto;
+  }
+
+  .image-container {
+    order: 2;
+    flex-direction: column;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
