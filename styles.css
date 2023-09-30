@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: blanchedalmond;
+}
+
+html {
+  background-color: #98bcff;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  width: min(calc(100% - 60px), 1080px);
+}
+
+header,
+footer {
+  background-color: #064063;
+  text-align: center;
+  color: white;
+}
+
+header {
+  padding-block: 40px;
+}
+
+header h1::before {
+  content: "The ";
+}
+
+header h1::after {
+  content: " albums";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.gallery .image-container,
+hgroup {
+  background-color: white;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.image-container img {
+  width: 50%;
+  border-radius: 20px;
+}
+
+.image-container img:hover {
+  /* width: 800px;
+  position: absolute;
+
+  transition: width 1s ease-in-out; */
+}
+
+.gallery hgroup {
+  padding: 80px;
+  background-color: white;
+  position: relative;
+
+  -webkit-box-shadow: inset 40px 15px 50px 5px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: inset 40px 15px 50px 5px rgba(0, 0, 0, 0.42);
+  box-shadow: inset 40px 15px 50px 5px rgba(0, 0, 0, 0.42);
+}
+
+.gallery hgroup h3 {
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 112px;
+  width: 70vh;
+}
+
+.paragraphs {
+  display: flex;
+}
+
+.paragraphs p {
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.paragraphs p::-webkit-scrollbar-track {
+  margin: 12px 3px 12px 0;
+}
+
+footer {
+  padding-bottom: 20px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+}
+
+footer nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  text-transform: uppercase;
+}
+
+footer div {
+  margin-block: 40px 30px;
+}
+
+footer div input {
+  padding: 5px 2px;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 20px;
+  border: 3px solid white;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="scroll-bar.css" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Long lost</title>
+  </head>
+  <body>
+    <header class="rounded">
+      <h1>Long lost</h1>
+    </header>
+    <main>
+      <section class="gallery">
+        <div class="image-container rounded">
+          <img
+            src="https://i.discogs.com/d7j269LeaXLxgeVUFC0miN-X7uOJzRiBqrPP5-BY7qQ/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mjc2/MjgtMTQ4NDI5Njk2/MC0yMDA4LmpwZWc.jpeg"
+            alt="minas_morgul_cover"
+            onclick="changeAlbumName('Minas Morgul')"
+            class="pointer"
+          />
+          <img
+            src="https://cdn.season-of-mist.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/S/u/Summoning-Dol-Guldur-CD-9520-1-1432115512.jpg"
+            alt="dol_guldur_cover"
+            onclick="changeAlbumName('Dol Guldur')"
+            class="pointer"
+          />
+          <img
+            src="https://f4.bcbits.com/img/a2672568039_65"
+            alt="stronghold_cover"
+            onclick="changeAlbumName('Stronghold')"
+            class="pointer"
+          />
+          <img
+            src="https://i.discogs.com/mPd35fFWD46x5Tb30QR4j2ce9l5UVtj9QV-E3UOFi2A/rs:fit/g:sm/q:90/h:586/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyODk4/ODEtMTYyMjgzMzIx/MC03NzE1LmpwZWc.jpeg"
+            alt="lost_tales_cover"
+            onclick="changeAlbumName('Lost Tales')"
+            class="pointer"
+          />
+        </div>
+        <hgroup class="rounded">
+          <h3 id="album_name">Stronghold</h3>
+        </hgroup>
+      </section>
+      <section class="paragraphs">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec maximus dui, ac commodo mauris. Donec dignissim ultrices porttitor. Suspendisse et metus sed orci suscipit vulputate. Mauris lorem dolor, luctus sit amet dignissim id, efficitur sit amet dui. Aliquam erat volutpat. Ut nibh arcu, facilisis sit amet consequat in, blandit quis eros. Fusce efficitur gravida mauris ut aliquam. Phasellus eget risus sit amet ipsum interdum interdum vel ultricies lectus. Praesent at orci rhoncus, pretium sem vel, vulputate felis. Vestibulum eu tortor ipsum. Morbi dapibus metus eget augue posuere interdum. Donec quis placerat felis. Vivamus felis nisl, sagittis eget dolor a, ultrices malesuada tellus. Praesent placerat posuere pharetra.
+
+            Aliquam vel vestibulum ex, sed porta erat. Nunc fringilla sodales urna, ornare egestas turpis malesuada at. Aliquam id urna semper, ultricies mi id, mattis urna. Aenean odio velit, ornare at varius ac, tincidunt id quam. Nullam ac efficitur mauris. Integer at consectetur arcu. Pellentesque convallis feugiat nibh, a fermentum eros interdum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo neque, elementum sit amet venenatis id, dapibus ut ex. Vivamus dignissim eros ac dignissim tristique. Donec blandit arcu ac porta tempus. Integer accumsan consequat facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In urna magna, iaculis eget hendrerit eu, sollicitudin nec risus. Nulla pulvinar nisl quis neque maximus rutrum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec maximus dui, ac commodo mauris. Donec dignissim ultrices porttitor. Suspendisse et metus sed orci suscipit vulputate. Mauris lorem dolor, luctus sit amet dignissim id, efficitur sit amet dui. Aliquam erat volutpat. Ut nibh arcu, facilisis sit amet consequat in, blandit quis eros. Fusce efficitur gravida mauris ut aliquam. Phasellus eget risus sit amet ipsum interdum interdum vel ultricies lectus. Praesent at orci rhoncus, pretium sem vel, vulputate felis. Vestibulum eu tortor ipsum. Morbi dapibus metus eget augue posuere interdum. Donec quis placerat felis. Vivamus felis nisl, sagittis eget dolor a, ultrices malesuada tellus. Praesent placerat posuere pharetra.
+
+            Aliquam vel vestibulum ex, sed porta erat. Nunc fringilla sodales urna, ornare egestas turpis malesuada at. Aliquam id urna semper, ultricies mi id, mattis urna. Aenean odio velit, ornare at varius ac, tincidunt id quam. Nullam ac efficitur mauris. Integer at consectetur arcu. Pellentesque convallis feugiat nibh, a fermentum eros interdum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo neque, elementum sit amet venenatis id, dapibus ut ex. Vivamus dignissim eros ac dignissim tristique. Donec blandit arcu ac porta tempus. Integer accumsan consequat facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In urna magna, iaculis eget hendrerit eu, sollicitudin nec risus. Nulla pulvinar nisl quis neque maximus rutrum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec maximus dui, ac commodo mauris. Donec dignissim ultrices porttitor. Suspendisse et metus sed orci suscipit vulputate. Mauris lorem dolor, luctus sit amet dignissim id, efficitur sit amet dui. Aliquam erat volutpat. Ut nibh arcu, facilisis sit amet consequat in, blandit quis eros. Fusce efficitur gravida mauris ut aliquam. Phasellus eget risus sit amet ipsum interdum interdum vel ultricies lectus. Praesent at orci rhoncus, pretium sem vel, vulputate felis. Vestibulum eu tortor ipsum. Morbi dapibus metus eget augue posuere interdum. Donec quis placerat felis. Vivamus felis nisl, sagittis eget dolor a, ultrices malesuada tellus. Praesent placerat posuere pharetra.
+
+            Aliquam vel vestibulum ex, sed porta erat. Nunc fringilla sodales urna, ornare egestas turpis malesuada at. Aliquam id urna semper, ultricies mi id, mattis urna. Aenean odio velit, ornare at varius ac, tincidunt id quam. Nullam ac efficitur mauris. Integer at consectetur arcu. Pellentesque convallis feugiat nibh, a fermentum eros interdum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo neque, elementum sit amet venenatis id, dapibus ut ex. Vivamus dignissim eros ac dignissim tristique. Donec blandit arcu ac porta tempus. Integer accumsan consequat facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In urna magna, iaculis eget hendrerit eu, sollicitudin nec risus. Nulla pulvinar nisl quis neque maximus rutrum.</p>
+      </section>
+    </main>
+    <footer class="rounded">
+        <h2>Forever lost</h2>
+        <nav>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">products</a></li>
+                <li><a href="">about us</a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <label for="feedback_input"><i>stay connected</i></label><br>
+            <input type="text" id="feedback_input" placeholder="Your e-mail"/>
+        </div>
+        <p>© made by Artem 2023</p>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
