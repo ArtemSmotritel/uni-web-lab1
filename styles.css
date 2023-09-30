@@ -215,4 +215,12 @@ footer p {
     border-radius: 0 !important;
     border: none !important;
   }
+
+  .paragraphs {
+    row-gap: 10px;
+  }
+
+  main {
+    row-gap: 12px;
+  }
 }
