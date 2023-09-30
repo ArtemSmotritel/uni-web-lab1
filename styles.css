@@ -8,26 +8,31 @@
 
 h1 {
   font-size: 5rem;
+  margin-block: 2.5rem 5rem;
 }
 
 h2 {
   font-size: 3.5rem;
+  margin-block: 1rem 2rem;
 }
 
 h3 {
   font-size: 3rem;
+  margin-block: 0.75rem 1.5rem;
 }
 
 h4 {
   font-size: 2.5rem;
+  margin-block: 0.65rem 1.25rem;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-block: 0.5rem 1rem;
 }
 
 h6 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 a {
@@ -57,10 +62,11 @@ footer {
   background-color: #064063;
   text-align: center;
   color: white;
+  padding-block: 20px;
 }
 
-header {
-  padding-block: 40px;
+header h1 {
+  text-shadow: 4px 3px 2px black, -4px -4px 1px rgba(255, 255, 255, 0.77);
 }
 
 header h1::before {
@@ -127,20 +133,17 @@ hgroup {
   display: flex;
 }
 
-.paragraphs p {
+.paragraphs article {
   border-radius: 20px;
   background-color: white;
   padding: 10px;
   height: 300px;
   overflow-y: auto;
+  flex: 1;
 }
 
-.paragraphs p::-webkit-scrollbar-track {
+.paragraphs article::-webkit-scrollbar-track {
   margin: 12px 3px 12px 0;
-}
-
-footer {
-  padding-bottom: 20px;
 }
 
 footer nav {
@@ -151,7 +154,7 @@ footer nav {
 footer nav ul {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 25px;
   text-transform: uppercase;
 }
 

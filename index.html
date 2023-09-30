@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="scroll-bar.css" />
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="logo.png" />
     <title>Long lost</title>
   </head>
   <body>
-    <header class="rounded">
+    <header id="home" class="rounded">
       <h1>Long lost</h1>
     </header>
     <main>
-      <section class="gallery">
+      <section id="albums" class="gallery">
         <div class="image-container rounded">
           <img
             src="https://i.discogs.com/d7j269LeaXLxgeVUFC0miN-X7uOJzRiBqrPP5-BY7qQ/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5Mjc2/MjgtMTQ4NDI5Njk2/MC0yMDA4LmpwZWc.jpeg"
@@ -44,33 +44,97 @@
           <h3 id="album_name">Stronghold</h3>
         </hgroup>
       </section>
-      <section class="paragraphs">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec maximus dui, ac commodo mauris. Donec dignissim ultrices porttitor. Suspendisse et metus sed orci suscipit vulputate. Mauris lorem dolor, luctus sit amet dignissim id, efficitur sit amet dui. Aliquam erat volutpat. Ut nibh arcu, facilisis sit amet consequat in, blandit quis eros. Fusce efficitur gravida mauris ut aliquam. Phasellus eget risus sit amet ipsum interdum interdum vel ultricies lectus. Praesent at orci rhoncus, pretium sem vel, vulputate felis. Vestibulum eu tortor ipsum. Morbi dapibus metus eget augue posuere interdum. Donec quis placerat felis. Vivamus felis nisl, sagittis eget dolor a, ultrices malesuada tellus. Praesent placerat posuere pharetra.
-
-            Aliquam vel vestibulum ex, sed porta erat. Nunc fringilla sodales urna, ornare egestas turpis malesuada at. Aliquam id urna semper, ultricies mi id, mattis urna. Aenean odio velit, ornare at varius ac, tincidunt id quam. Nullam ac efficitur mauris. Integer at consectetur arcu. Pellentesque convallis feugiat nibh, a fermentum eros interdum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo neque, elementum sit amet venenatis id, dapibus ut ex. Vivamus dignissim eros ac dignissim tristique. Donec blandit arcu ac porta tempus. Integer accumsan consequat facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In urna magna, iaculis eget hendrerit eu, sollicitudin nec risus. Nulla pulvinar nisl quis neque maximus rutrum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec maximus dui, ac commodo mauris. Donec dignissim ultrices porttitor. Suspendisse et metus sed orci suscipit vulputate. Mauris lorem dolor, luctus sit amet dignissim id, efficitur sit amet dui. Aliquam erat volutpat. Ut nibh arcu, facilisis sit amet consequat in, blandit quis eros. Fusce efficitur gravida mauris ut aliquam. Phasellus eget risus sit amet ipsum interdum interdum vel ultricies lectus. Praesent at orci rhoncus, pretium sem vel, vulputate felis. Vestibulum eu tortor ipsum. Morbi dapibus metus eget augue posuere interdum. Donec quis placerat felis. Vivamus felis nisl, sagittis eget dolor a, ultrices malesuada tellus. Praesent placerat posuere pharetra.
-
-            Aliquam vel vestibulum ex, sed porta erat. Nunc fringilla sodales urna, ornare egestas turpis malesuada at. Aliquam id urna semper, ultricies mi id, mattis urna. Aenean odio velit, ornare at varius ac, tincidunt id quam. Nullam ac efficitur mauris. Integer at consectetur arcu. Pellentesque convallis feugiat nibh, a fermentum eros interdum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo neque, elementum sit amet venenatis id, dapibus ut ex. Vivamus dignissim eros ac dignissim tristique. Donec blandit arcu ac porta tempus. Integer accumsan consequat facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In urna magna, iaculis eget hendrerit eu, sollicitudin nec risus. Nulla pulvinar nisl quis neque maximus rutrum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec maximus dui, ac commodo mauris. Donec dignissim ultrices porttitor. Suspendisse et metus sed orci suscipit vulputate. Mauris lorem dolor, luctus sit amet dignissim id, efficitur sit amet dui. Aliquam erat volutpat. Ut nibh arcu, facilisis sit amet consequat in, blandit quis eros. Fusce efficitur gravida mauris ut aliquam. Phasellus eget risus sit amet ipsum interdum interdum vel ultricies lectus. Praesent at orci rhoncus, pretium sem vel, vulputate felis. Vestibulum eu tortor ipsum. Morbi dapibus metus eget augue posuere interdum. Donec quis placerat felis. Vivamus felis nisl, sagittis eget dolor a, ultrices malesuada tellus. Praesent placerat posuere pharetra.
-
-            Aliquam vel vestibulum ex, sed porta erat. Nunc fringilla sodales urna, ornare egestas turpis malesuada at. Aliquam id urna semper, ultricies mi id, mattis urna. Aenean odio velit, ornare at varius ac, tincidunt id quam. Nullam ac efficitur mauris. Integer at consectetur arcu. Pellentesque convallis feugiat nibh, a fermentum eros interdum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut leo neque, elementum sit amet venenatis id, dapibus ut ex. Vivamus dignissim eros ac dignissim tristique. Donec blandit arcu ac porta tempus. Integer accumsan consequat facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In urna magna, iaculis eget hendrerit eu, sollicitudin nec risus. Nulla pulvinar nisl quis neque maximus rutrum.</p>
+      <section id="about-sections" class="paragraphs">
+        <article>
+          <h5>Minas Morgul</h5>
+          <p>
+            "Minas Morgul" is the second full-length album by the Austrian black
+            metal band Summoning. The band and many of their fans consider this
+            album to be their debut album as it developed the "Summoning sound"
+            and brought the band to a larger audience due to its lyrics
+            involving J. R. R. Tolkien's themes.
+          </p>
+          <br />
+          <p>
+            The album received dominantly positive reviews. It was criticized
+            for the vocals and Kraftwerk-esque drum sound, but was praised for
+            its context referencing Tolkien. Sputnik describes the band's sound
+            as bombastic and unique because the synths provide medieval sounds,
+            giving it an amazing result when fused with guitars. Metal Storm
+            considers the album as one of the most appreciated black metal
+            releases.
+          </p>
+        </article>
+        <article>
+          <h5>Dol Guldur</h5>
+          <p>
+            "Dol Guldur" is the third studio album by the Austrian black metal
+            band Summoning. It was released in 1997, through Napalm Records.
+          </p>
+          <br />
+          <p>
+            All lyrics are written by P. K. of the black metal band Abigor apart
+            from those by J. R. R. Tolkien, who is even credited in the album
+            booklet. The final track, "Over Old Hills", is based on the song
+            "Trapped and Scared" from Protector's solo project, Ice Ages' debut
+            album "Strike the Ground". The album's cover was adapted from
+            'Middle Earth', a painting by Roger Garland, and from a picture of
+            the Ottenstein reservoir in the Austrian Waldviertel, showing the
+            ruins of Lichtenfels Castle.
+          </p>
+        </article>
+        <article>
+          <h5>Stronghold</h5>
+          <p>
+            "Stronghold" is the fourth full-length album by the Austrian black
+            metal band Summoning. This album marked a change in the sound of
+            Summoning as it was much more "guitar orientated with more compact
+            keyboard-melodies". "Where Hope and Daylight Die" features Tania
+            Borsky, Protector's ex-girlfriend and a former member of Die
+            Verbannten Kinder Evas, on lead vocals. The album's cover was
+            adapted from 'The Bard', an 1817 painting by John Martin.
+          </p>
+          <br />
+          <p>
+            This album is the first by Summoning to feature audio-clips; the
+            clips used on this album were from the movies Braveheart and Legend.
+          </p>
+        </article>
+        <article>
+          <h5>Lost Tales</h5>
+          <p>
+            "Lost Tales" is the second EP by Summoning. It consists of two
+            dungeon synth songs: "Arcenstone", that was originally written for
+            the darkwave project of Silenius called "Mirkwood" (which was never
+            released), and "Saruman", a song left over from the "Dol Guldur"
+            sessions in 1996.
+          </p>
+          <br />
+          <p>
+            The songs are not in high quality and just taken from the original
+            tape were they have been recorded. Originally there were two other
+            cover layouts, which they wanted to use, but didn't get the
+            permission by the painter's distributer.
+          </p>
+        </article>
       </section>
     </main>
     <footer class="rounded">
-        <h2>Forever lost</h2>
-        <nav>
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">products</a></li>
-                <li><a href="">about us</a></li>
-            </ul>
-        </nav>
+      <h2>Forever lost</h2>
+      <nav>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#albums">albums</a></li>
+          <li><a href="#about-sections">about albums</a></li>
+        </ul>
+      </nav>
 
-        <div>
-            <label for="feedback_input"><i>stay connected</i></label><br>
-            <input type="text" id="feedback_input" placeholder="Your e-mail"/>
-        </div>
-        <p>© made by Artem 2023</p>
+      <div>
+        <label for="feedback_input"><i>stay connected</i></label
+        ><br />
+        <input type="text" id="feedback_input" placeholder="Your e-mail" />
+      </div>
+      <p>© made by Artem 2023</p>
     </footer>
   </body>
   <script src="index.js"></script>
