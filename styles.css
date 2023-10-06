@@ -99,13 +99,18 @@ hgroup {
   position: relative;
 }
 
-.image-container img {
+.image-container div {
   width: 50%;
-  min-width: 250px;
-  border-radius: 20px;
 }
 
-.image-container img:hover {
+.image-container div img {
+  min-width: 250px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container div img:hover {
   /* width: 800px;
   position: absolute;
 
@@ -201,11 +206,11 @@ footer p {
     order: 2;
   }
 
-  .paragraphs article {
-    min-width: 400px;
+  .paragraphs {
+    flex-direction: column;
   }
 
-  .image-container img {
+  .image-container div {
     width: 100%;
   }
 }
