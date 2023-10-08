@@ -44,6 +44,36 @@ a:hover {
   color: blanchedalmond;
 }
 
+#pop-up {
+  position: fixed;
+  z-index: 20;
+  right: 20px;
+  top: 10px;
+  background-color: black;
+  color: white;
+  text-wrap: nowrap;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 250px;
+}
+
+#pop-up h6 {
+  display: inline;
+}
+
+#pop-up:hover::after {
+  content: " on tg";
+  width: max-content;
+  text-wrap: nowrap;
+  width: 500px;
+}
+
+#pop-up:hover {
+  scale: 1.2;
+  transition: all 0.3s ease-in-out;
+}
+
 html {
   background-color: #98bcff;
   display: flex;
@@ -111,10 +141,33 @@ hgroup {
 }
 
 .image-container div img:hover {
-  /* width: 800px;
+  height: 100%;
+  width: 100%;
+
+  z-index: 10;
   position: absolute;
 
-  transition: width 1s ease-in-out; */
+  transition: all 1s ease-in-out;
+}
+
+.image-container div:nth-child(1) img:hover {
+  left: 0;
+  top: 0;
+}
+
+.image-container div:nth-child(2) img:hover {
+  right: 0;
+  top: 0;
+}
+
+.image-container div:nth-child(3) img:hover {
+  left: 0;
+  bottom: 0;
+}
+
+.image-container div:nth-child(4) img:hover {
+  right: 0;
+  bottom: 0;
 }
 
 .gallery hgroup {
@@ -203,7 +256,14 @@ footer p {
   }
 
   .image-container {
-    order: 2;
+    /* order: 2; */
+  }
+
+  .image-container div img:hover {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: none;
   }
 
   .paragraphs {
